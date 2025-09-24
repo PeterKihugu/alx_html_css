@@ -1,0 +1,28 @@
+/* styles.css - Flexbox layout for the pages */
+
+/* Body is a vertical flex container, full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* keep header/main/footer within viewport */
+    margin: 0;
+}
+
+/* Main is a horizontal flex container and takes available space */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* grows/shrinks to fill space between header/footer */
+}
+
+/* Article uses 2 parts (2/3) of the horizontal space */
+article {
+    flex: 2;
+    overflow-y: auto; /* allow scrolling within article */
+}
+
+/* Aside uses 1 part (1/3) of the horizontal space */
+aside {
+    flex: 1;
+    overflow-y: auto; /* allow scrolling within aside */
+}

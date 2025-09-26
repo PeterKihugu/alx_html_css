@@ -100,3 +100,41 @@ img, picture, video, iframe {
     padding-right: 1rem;
   }
 }
+/* === Custom Styling === */
+
+/* Header background and navigation colors */
+header {
+  background-color: #222;
+  padding: 1rem;
+}
+
+header ul li {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+/* Logo: already has a base style, but we can tweak */
+header .logo {
+  font-size: 2rem;     /* make it bigger */
+  margin-right: 2rem;  /* give space after logo */
+  color: #ffcc00;      /* gold color */
+}
+
+/* Article content */
+article {
+  background: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Example links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

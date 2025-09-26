@@ -38,3 +38,65 @@ header, footer {
   padding: 1em;
   text-align: center;
 }
+/* === Responsive helpers (add at bottom of styles.css) === */
+
+/* make box-model predictable */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* scale images and media to container */
+img, picture, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* responsive container: fluid width on small screens, capped on large */
+.container {
+  width: 100%;
+  max-width: 1200px; /* keep this as desktop cap, adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* flexible rows and columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* adjust as needed */
+}
+
+.col {
+  flex: 1 1 200px; /* grow, shrink, base width 200px */
+  min-width: 0;    /* prevents overflow with long text */
+}
+
+/* stack columns on small screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+    flex: none;
+  }
+  html, body {
+    font-size: 16px; /* ensure legible type on small devices */
+  }
+}
+
+/* further small-screen tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  /* reduce big paddings and margins that cause overflow */
+  .hero, header, .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

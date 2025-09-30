@@ -282,4 +282,75 @@ footer img {
   width: 100px;
   margin-bottom: 1rem;
 }
+/* === HEADER === */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
 
+header img {
+  height: 40px; /* logo size */
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #C271FF;
+}
+
+/* === HERO SECTION === */
+.hero {
+  height: 100vh;
+  background: linear-gradient(0deg, #071629 0%, #0a1633 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 1rem 2.5rem;
+  background: #C271FF;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background: #a052d3;
+}

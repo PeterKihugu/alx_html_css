@@ -316,6 +316,7 @@ header nav ul li a:hover {
 }
 
 /* === HERO SECTION === */
+/* === HERO SECTION FIX === */
 .hero {
   height: 100vh;
   background: linear-gradient(0deg, #071629 0%, #0a1633 100%);
@@ -335,18 +336,21 @@ header nav ul li a:hover {
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero button {
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
   background: #C271FF;
   border: none;
   border-radius: 30px;
   color: #fff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -354,3 +358,39 @@ header nav ul li a:hover {
 .hero button:hover {
   background: #a052d3;
 }
+
+/* === LEARN FROM THE PROS === */
+.learn {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #071629;
+  color: #fff;
+}
+
+.learn h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.learn h2 span {
+  color: #C271FF;
+}
+
+.learn .cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.learn .cards article {
+  max-width: 200px;
+}
+
+.learn .cards img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
